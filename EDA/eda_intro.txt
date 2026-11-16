@@ -1,0 +1,12 @@
+Aspect of EDA:
+    1. Type of data, count data
+    2. data distribution
+    3. spotting missing data
+    4. outliers
+    5. relationsheep between features
+
+Method to doing EDA:
+    1. analytical analysis
+    2. uni-variente analysis
+    3. bi-variante analysis & multi-variante analysis
+    4. y-data profiling
