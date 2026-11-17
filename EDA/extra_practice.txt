@@ -16,5 +16,12 @@ Problem 3: Find Missing Values
     2. Display only the columns that contain missing values.
     3. Identify the column with the highest number of missing values.
 
+Problem 4: Check Duplicate Rows
+
+    1. Count the total number of duplicate rows.
+    2. Create a separate DataFrame without duplicate rows.
+    3. Display the number of rows before and after removing duplicates.
+
+
 
 
