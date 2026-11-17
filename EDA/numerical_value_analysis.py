@@ -18,3 +18,11 @@ plt.title("Age in Histogram ")
 plt.xlabel("Age")
 plt.ylabel("Frequency")
 plt.show()
+
+
+# KDE plot
+sns.kdeplot(df["Age"])
+plt.title("KDE plot of age")
+plt.xlabel("Age")
+plt.ylabel("Probability of distribution")
+plt.show()

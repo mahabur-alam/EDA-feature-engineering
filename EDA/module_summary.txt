@@ -1,0 +1,64 @@
+EDA MODULE SUMMARY
+==================
+Dataset used by all scripts: ../datasets/titanic_data_updated.csv (891 rows)
+Common imports in every script: pandas, numpy, matplotlib.pyplot, seaborn
+
+
+1. eda_intro.py  --  Introduction / Feature Scanning
+   - Loads the dataset with pandas (read_csv).
+   - head(10): preview first 10 rows.
+   - sample(10): preview 10 random rows.
+   - shape: dataset dimensions (rows, columns).
+   - isnull().sum(): count of missing values per column.
+   - duplicated().sum(): count of duplicate rows.
+   - describe(): statistical profiling (count, mean, std, min, max, quartiles).
+   - info(): column data types and non-null counts.
+
+2. categorical_value_analysis.py  --  Univariate: Survived column
+   - value_counts(): count of each class in 'Survived'.
+   - value_counts()/len(df)*100: percentage share of each class.
+   - sns.countplot(): bar chart of survived counts.
+   - plt.pie(): pie chart showing survived vs. not-survived ratio.
+
+3. categorical_value_analysis_2.py  --  Univariate: Pclass column
+   - df.columns: list all columns.
+   - sns.countplot(): bar chart of passenger class counts.
+   - value_counts() and percentage of each passenger class.
+   - plt.pie(): pie chart of passenger class ratio.
+
+4. categorical_value_analysis_3.py  --  Univariate: Sex column
+   - sns.countplot(): bar chart of male/female counts.
+   - value_counts() and percentage of each sex.
+   - plt.pie(): pie chart of sex ratio.
+
+5. categorical_value_analysis_4.py  --  Univariate: Embarked column
+   - sns.countplot(): bar chart of embarkation port counts.
+   - value_counts() and percentage of each port.
+   - unique(): list of unique embarkation ports.
+   - plt.pie(): pie chart of embarked ratio.
+
+6. numerical_value_analysis.py  --  Univariate: Age column (numerical)
+   - sns.histplot(bins=30): histogram of Age distribution.
+   - sns.kdeplot(): KDE (density) plot of Age.
+
+7. numerical_value_analysis_1.py  --  Univariate: Fare column (numerical)
+   - df.columns and df.info(): quick look at structure and data types.
+   - sns.histplot(bins=50): histogram of Fare distribution.
+   - sns.kdeplot(): KDE (density) plot of Fare.
+   - sns.boxplot(): box plot of Fare to spot spread and outliers.
+
+
+TECHNIQUES COVERED
+------------------
+1.  Feature scanning (shape, head, sample, info)
+2.  Statistical profiling (describe)
+3.  Standard deviation (via describe)
+4.  Missing value & duplicate detection (isnull, duplicated)
+5.  Categorical data analysis (value_counts, counts %)
+6.  Univariate analysis (single-column study)
+7.  Numerical data analysis (Age, Fare)
+8.  Count plot (seaborn countplot)
+9.  Pie chart (matplotlib pie)
+10. Histogram plot (seaborn histplot)
+11. KDE plot (seaborn kdeplot)
+12. Box plot (seaborn boxplot)
