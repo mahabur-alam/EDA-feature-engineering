@@ -1,0 +1,10 @@
+feature engineering steps:
+1. fe starter
+2. feature column & target column select
+3. split dataset - train & test
+4. missing & duplicate values handling
+5. outlier detection and hadling
+6. convert categorical data to numerical data type (encoding)
+7. numerical data scalling
+8. different scalling method
+9. feature extract-create
