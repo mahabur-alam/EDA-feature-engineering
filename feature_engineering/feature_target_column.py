@@ -5,7 +5,7 @@ df = pd.read_csv('../datasets/titanic_data_updated.csv')
 #print(df)
 
 # drop un-necessary column
-df.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
+df.drop(['PassengerId', 'Name', 'Ticket'], axis=1, inplace=True)
 #print(df.head())
 
 # feature column
